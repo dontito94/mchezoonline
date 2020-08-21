@@ -50,7 +50,15 @@
             <div class="kode_navigation">
                 <!--Navigation Start-->
                 <ul class="nav">
-                    <li><a href="index-2.html">home</a></li>
+                    <li><a href="{{url('/')}}">home</a></li>
+                    <li>
+                        <a href="#">Sports</a>
+                        <ul>
+                            @foreach($all_sports as $all_sport)
+                            <li><a href="#">{{$all_sport->strSport}}</a></li>
+                            @endforeach
+                        </ul>
+                    </li>
                     <li>
                         <a href="#">Fixtures & Results</a>
                         <ul>
@@ -58,39 +66,7 @@
                             <li><a href="team-schedule.html">teamschedule</a></li>
                         </ul>
                     </li>
-                    <li>
-                        <a href="#">blog</a>
-                        <ul>
-                            <li>
-                                <a href="#">blog 1</a>
-                                <ul>
-                                    <li><a href="blog-grid-2.html">blog 2</a></li>
-                                    <li><a href="blog-grid-3.html">blog 3</a></li>
-                                    <li><a href="blog-grid-4.html">blog 4</a></li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="#">blog 2</a>
-                                <ul>
-                                    <li><a href="blog2-grid-2.html">blog 2</a></li>
-                                    <li><a href="blog2-grid-3.html">blog 3</a></li>
-                                    <li><a href="blog2-grid-4.html">blog 4</a></li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="#">blog 3</a>
-                                <ul>
-                                    <li><a href="blog3-grid-2.html">blog 2</a></li>
-                                    <li><a href="blog3-grid-3.html">blog 3</a></li>
-                                    <li><a href="blog3-grid-4.html">blog 4</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="blog-grid-with-sidebar.html">blog grid</a></li>
-                            <li><a href="blog-large-with-sidebar.html">blog large</a></li>
-                            <li><a href="blog-listing-with-sidebar.html">blog listing</a></li>
-                            <li><a href="blog-detail.html">blog detail</a></li>
-                        </ul>
-                    </li>
+
                     <li>
                         <a href="#">team</a>
                         <ul>
