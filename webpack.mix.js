@@ -1,4 +1,5 @@
-const mix = require('laravel-mix');
+let mix = require('laravel-mix');
+const webpack = require('webpack');
 
 /*
  |--------------------------------------------------------------------------
@@ -11,5 +12,36 @@ const mix = require('laravel-mix');
  |
  */
 
-mix.js('resources/js/app.js', 'public/js')
-    .sass('resources/sass/app.scss', 'public/css');
+let config = {
+    module: {
+        rules: [
+            { test: /modernizr/, loader: 'imports-loader?this=>window!exports-loader?window.Modernizr' },
+        ]
+    },
+    resolve: {
+        modules: [
+            'node_modules'
+        ],
+        alias: {
+            handlebars: 'handlebars/dist/handlebars.min.js'
+        }
+    },
+    plugins: [
+        new webpack.ProvidePlugin({
+            $: 'jquery',
+            jQuery: 'jquery',
+            'window.jQuery': 'jquery'
+        }),
+    ]
+};
+
+mix.webpackConfig(config);
+
+mix.js('resources/js/app.js', 'public/js');
+// .extract([
+//     'vue',
+// ]);
+
+if (mix.inProduction() || process.env.npm_lifecycle_event !== 'hot') {
+    mix.version();
+}

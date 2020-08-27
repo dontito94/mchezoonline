@@ -9,6 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title>Home - GamePlay Sports HTML Theme</title>
+    <script src="{{ asset('js/app.js') }}" defer></script>
 
 {{ Html::style(url('css/bootstrap.css')) }}
 {{ Html::style(url('js/dl-menu/component.css')) }}
@@ -27,18 +28,22 @@
 </head>
 
 <body>
+<div id="app">
 
 <!--kode Wrapper Start-->
 <div class="kode_wrapper">
     <!--Header 2 Wrap Start-->
-    @include('includes.components.header')
 
+{{--    @include('includes.components.header')--}}
+
+    <home></home>
     <!--Header 2 Wrap End-->
-      @yield('content')
+    <example-component></example-component>
+{{--      @yield('content')--}}
 
 
     <!--Footer Wrap Start-->
-    @include('includes.components.footer')
+{{--    @include('includes.components.footer')--}}
     <!--Footer Wrap End-->
     <!--Copy Right Wrap Start-->
     <div class="copy_right3">
@@ -63,6 +68,10 @@
     </div>
     <!--Register Pop Up Wrap End-->
 </div>
+
+
+</div>
+
 <!--kode Wrapper End-->
 <!--Jquery Library-->
 <script src="js/jquery.js"></script>
@@ -82,8 +91,10 @@
 <script src="js/jquery.prettyPhoto.js"></script>
 <!--Custom JavaScript-->
 <script src="js/custom.js"></script>
-
 </body>
 
 <!-- Mirrored from kodeforest.net/html/gameplay/ by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 19 Jul 2020 10:31:10 GMT -->
 </html>
+<script>
+
+</script>
