@@ -21,7 +21,7 @@
 		* 2.10 - Table Css Start #table
 		* 2.11 - Footer Css Start #footer
 	* 3.0 - Blog Page 2 Start #blogpage2
-			
+
 	* 4.0 - Team Overview Page Start #team overview
 		* 4.1 - Table 2 #table2
 		* 4.2 - Table 3 #table3
@@ -67,7 +67,7 @@
 	a (active): #999999 (light black)
 
 	[Typography]
-	  
+
 	Body copy:  14px/ "Open Sans",sans-serif
 	Headers:  "Open Sans",sans-serif
 	Input, textarea: "Open Sans",sans-serif
@@ -86,14 +86,14 @@ header,
 section{
 	float:left;
 	width:100%;
-	position:relative;	
+	position:relative;
 }
 .section,
 section{
-	padding:70px 0px 40px;	
+	padding:70px 0px 40px;
 }
 .no_padding{
-	padding:0px;	
+	padding:0px;
 }
 .margin-0{
 	margin: 0!important;
@@ -177,10 +177,10 @@ section{
     visibility: hidden;
     min-width: 250px;
     z-index: 99;
-    -webkit-transition: all 0.3s ease-in-out 0s;   
+    -webkit-transition: all 0.3s ease-in-out 0s;
     -moz-transition: all 0.3s ease-in-out 0s;
     -ms-transition: all 0.3s ease-in-out 0s;
-    -o-transition: all 0.3s ease-in-out;    
+    -o-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out 0s;
     background: #fff;
 }
@@ -467,7 +467,7 @@ section{
 			    	transform: skew(-30deg);
 }
 .kode_header_2 .kode_navigation .nav > li{
-	margin-right: 23px; 
+	margin-right: 23px;
 }
 .kode_header_2 .kode_navigation .nav > li:hover > a{
 	background-color: transparent;
@@ -498,7 +498,7 @@ section{
 	float: none;
 	overflow: hidden;
 	width: auto;
-	padding:2px 0 2px 10px; 
+	padding:2px 0 2px 10px;
 }
 .kf_cart .text em,
 .kf_cart .text span{
@@ -972,7 +972,7 @@ section{
 }
 .text_wrper .text span{
 	color: #666 !important;
-	margin:0 0 8px; 
+	margin:0 0 8px;
 	font-size: 14px;
 }
 .text_wrper .text p{
@@ -1287,7 +1287,7 @@ section{
 }
 .kf_table .table_head div{
 	padding-top: 10px;
-	padding-bottom: 10px; 
+	padding-bottom: 10px;
 }
 /*
 	  ============================================================
@@ -1359,7 +1359,7 @@ footer .widget{
 	color: #fff;
 	width: 35px;
 	height: 35px;
-	font-size: 16px; 
+	font-size: 16px;
 	margin-top: -18px;
 	line-height: 33px;
 	position: absolute;
@@ -1378,12 +1378,12 @@ footer .widget{
 	color: #fff;
 	font-size: 16px;
 	line-height: 20px;
-	font-weight:normal; 
+	font-weight:normal;
 	font-style: normal;
 	text-transform: capitalize;
 }
 .kf_contact_meta li p{
-	padding:7px 0; 
+	padding:7px 0;
 }
 .kf_contact_meta li:last-child{
 	margin: 0;
@@ -1437,7 +1437,7 @@ footer .widget{
 	border-bottom: 1px solid #4e4e4e;
 }
 .link_rnt_post li:first-child{
-	padding-top:0; 
+	padding-top:0;
 }
 .link_rnt_post li .kf_recentnews{
 	margin: 0;
@@ -1571,7 +1571,7 @@ footer .widget{
 	padding: 60px 0 30px;
 	background-repeat: repeat;
 	background-position: center;
-	background-image: url(extra-images/footer2-bg.jpg);
+	background-color: #000000;
 }
 .kode_footer_2 .logo{
 	padding: 0;
@@ -1728,7 +1728,7 @@ footer .widget{
 	display: table-row;
 	vertical-align: middle;
 }
-.kf_table2 li.table_head{	
+.kf_table2 li.table_head{
 	color: #333;
 	font-size: 14px;
 	text-align: left;
@@ -2153,7 +2153,7 @@ footer .widget{
 .kf_opponents_wrap{
 	float: left;
 	width: 100%;
-	margin:0 0 40px; 
+	margin:0 0 40px;
 	position: relative;
 }
 .kf_opponents_dec{
@@ -2256,7 +2256,7 @@ footer .widget{
 	float: left;
 	width: 100%;
 	height: 6px;
-	border-radius:0; 
+	border-radius:0;
 	box-shadow: none;
 	background-color: #ebf0f6;
 }
@@ -2350,7 +2350,7 @@ footer .widget{
 	color: #fff;
 	float: right;
 	border: none;
-	font-size: 16px; 
+	font-size: 16px;
 	font-weight: bold;
 	line-height: normal;
 	padding: 14px 30px;
@@ -2500,7 +2500,7 @@ footer .widget{
 	margin: 0;
 }
 .kf_tabs_nav .nav-tabs li a{
-	margin: 0;	
+	margin: 0;
 	float: left;
 	width: auto;
 	color: #333;
@@ -2706,7 +2706,7 @@ footer .widget{
 }
 .kf_searchbar .searchbar_list .select_dec{
 	width: 140px;
-	margin:0 0 0 30px; 
+	margin:0 0 0 30px;
 }
 .kf_searchbar .searchbar_list .select_dec:first-child{
 	margin: 0;
@@ -2806,7 +2806,7 @@ footer .widget{
 }
 .kf_opponents_wrap2 .kf_opponents_dec.span_right .text{
 	padding: 8px 20px 11px 0px;
-}	
+}
 .kf_opponents_wrap2 .kf_opponents_dec span{
 	width: 52px;
 	height: 52px;
@@ -2909,7 +2909,7 @@ footer .widget{
 }
 .ticketdetail_hd .tkt_date > span{
 	font-size: 16px;
-	color: #999; 
+	color: #999;
 	display: inline-flex;
 	text-transform: capitalize;
 }
@@ -3255,7 +3255,7 @@ footer .widget{
 }
 .comment_form li ul li .comment_dec{
 	padding-left: 100px;
-} 
+}
 .comment_dec figure{
 	float: left;
 	width: 80px;
@@ -3438,7 +3438,7 @@ footer .widget{
 	bottom: 0;
 	height: 100%;
 	width: 100%;
-	text-align: center; 
+	text-align: center;
 }
 .kf_comingsoon{
 	position: absolute;
@@ -3490,7 +3490,7 @@ footer .widget{
 	height: 35px;
 	line-height: 35px;
 	font-size: 24px;
-	color: #fff; 
+	color: #fff;
 }
 .kf_comingsoon form{
 	width: 468px;
@@ -3538,7 +3538,7 @@ footer .widget{
 	padding: 29px 0 30px;
 	text-align: center;
 	border-top:1px solid #585858;
-	background-color: #222222; 
+	background-color: #222222;
 }
 .copy_right3 p{
 	margin: 0 0 22px;
@@ -3611,7 +3611,7 @@ footer .widget{
 	text-transform: uppercase;
 }
 .kf_form_hd p{
-	margin: 0; 
+	margin: 0;
 	float: left;
 	width: 100%;
 	font-size: 15px;

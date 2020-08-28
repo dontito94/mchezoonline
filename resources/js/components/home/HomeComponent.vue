@@ -4,7 +4,8 @@
     <header-component></header-component>
 
 <!--    main component-->
-    <main-component></main-component>
+    <router-view></router-view>
+
 <!--    footer component-->
     <footer-component></footer-component>
 </div>

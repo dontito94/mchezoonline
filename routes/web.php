@@ -15,7 +15,9 @@ use Illuminate\Support\Facades\Route;
 
 
 Auth::routes();
+Route::get('{any}', function () {
+    return view('layouts.main');
+})->where('any', '.*');
 
-Route::get('/', 'HomeController@index')->name('home');
-
+//include web directory
 includeRouteFiles(__DIR__.'/Web/');

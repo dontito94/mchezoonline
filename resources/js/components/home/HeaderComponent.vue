@@ -52,7 +52,10 @@
                     <div class="kode_navigation">
                         <!--Navigation Start-->
                         <ul class="nav">
-                            <li><a href="#">home</a></li>
+                            <li>
+                                <router-link to="/">Home</router-link>
+
+                            </li>
                             <li>
                                 <a href="#">Sports</a>
                                 <ul>
@@ -62,11 +65,7 @@
                                 </ul>
                             </li>
                             <li>
-                                <a href="#">Fixtures & Results</a>
-                                <ul>
-                                    <li><a href="latest-result.html">latest result</a></li>
-                                    <li><a href="team-schedule.html">teamschedule</a></li>
-                                </ul>
+                                <router-link to="/fixtures">Fixtures</router-link>
                             </li>
 
                             <li>
