@@ -8,6 +8,8 @@ require('./bootstrap');
 
 window.Vue = require('vue');
 
+//import router
+import router from './router/index'
 
 /**
  * The following block of code may be used to automatically register your
@@ -30,4 +32,5 @@ Vue.component('home-component', require('./components/home/HomeComponent').defau
 
 const app = new Vue({
     el: '#app',
+    router,
 });
