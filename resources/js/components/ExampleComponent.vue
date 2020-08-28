@@ -5,7 +5,7 @@
 </template>
 
 <script>
-    import Home from "./home/Home";
+    import Home from "./home/HomeComponent";
     export default {
         components: {Home},
         mounted() {

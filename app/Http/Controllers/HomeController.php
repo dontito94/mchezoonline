@@ -24,7 +24,7 @@ class HomeController extends Controller
      */
     public function index()
     {
-        $all_sports = (new SportRepository())->getAllSports();
+        $all_sports = [];
         return view('welcome')
             ->with('all_sports',$all_sports);
     }

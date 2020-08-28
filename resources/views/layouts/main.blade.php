@@ -36,9 +36,9 @@
 
 {{--    @include('includes.components.header')--}}
 
-    <home></home>
     <!--Header 2 Wrap End-->
-    <example-component></example-component>
+    <home-component></home-component>
+
 {{--      @yield('content')--}}
 
 
