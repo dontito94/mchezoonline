@@ -1,7 +1,10 @@
 import Fixtures from "../components/fixtures/Fixtures";
 
 
-export default ({
+export default (
+    {
     path: '/fixtures',
     component:Fixtures,
-})
+}
+
+)
