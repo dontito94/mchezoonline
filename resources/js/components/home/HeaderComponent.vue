@@ -38,7 +38,7 @@
                 </div>
             </div>
             <!--Header 2 Top Bar End-->
-            <div class="container">
+            <div class="nav_container fixme"  style="">
                 <!--Logo Bar Start-->
                 <div class="kode_logo_bar">
                     <!--Logo Start-->
@@ -54,15 +54,10 @@
                         <ul class="nav">
                             <li>
                                 <router-link to="/">Home</router-link>
-
                             </li>
                             <li>
-                                <a href="#">Sports</a>
-                                <ul>
-                                    <!--                                @foreach($all_sports as $all_sport)-->
-                                    <!--                                <li><a href="#">{{$all_sport->strSport}}</a></li>-->
-                                    <!--                                @endforeach-->
-                                </ul>
+                                <a href="#">News</a>
+
                             </li>
                             <li>
                                 <router-link to="/fixtures">Fixtures</router-link>
@@ -164,8 +159,33 @@
 
 <script>
     export default {
-        name: "HeaderComponent"
+        name: "HeaderComponent",
+        methods:{
+
+        }
     }
+
+
+
+
+    // var fixmeTop = $('.kf_top_bar').offset().top;
+    // $(window).scroll(function() {
+    //     var currentScroll = $(window).scrollTop();
+    //     if (currentScroll >= fixmeTop) {
+    //         $('.kf_top_bar').css({
+    //             position: 'fixed',
+    //             top: '0',
+    //             left: '0'
+    //         });
+    //     } else {
+    //         $('.kf_top_bar').css({
+    //             position: 'static'
+    //         });
+    //     }
+    //
+    // });
+
+
 </script>
 
 <style scoped>

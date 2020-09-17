@@ -2230,14 +2230,25 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
-//
 /* harmony default export */ __webpack_exports__["default"] = ({
-  name: "HeaderComponent"
-});
+  name: "HeaderComponent",
+  methods: {}
+}); // var fixmeTop = $('.kf_top_bar').offset().top;
+// $(window).scroll(function() {
+//     var currentScroll = $(window).scrollTop();
+//     if (currentScroll >= fixmeTop) {
+//         $('.kf_top_bar').css({
+//             position: 'fixed',
+//             top: '0',
+//             left: '0'
+//         });
+//     } else {
+//         $('.kf_top_bar').css({
+//             position: 'static'
+//         });
+//     }
+//
+// });
 
 /***/ }),
 
@@ -21307,7 +21318,7 @@ var render = function() {
     _c("header", { staticClass: "kode_header_2" }, [
       _vm._m(0),
       _vm._v(" "),
-      _c("div", { staticClass: "container" }, [
+      _c("div", { staticClass: "nav_container fixme" }, [
         _c("div", { staticClass: "kode_logo_bar" }, [
           _vm._m(1),
           _vm._v(" "),
@@ -21453,11 +21464,7 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("li", [
-      _c("a", { attrs: { href: "#" } }, [_vm._v("Sports")]),
-      _vm._v(" "),
-      _c("ul")
-    ])
+    return _c("li", [_c("a", { attrs: { href: "#" } }, [_vm._v("News")])])
   },
   function() {
     var _vm = this
@@ -39453,7 +39460,9 @@ __webpack_require__.r(__webpack_exports__);
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   path: '/fixtures',
-  component: _components_fixtures_Fixtures__WEBPACK_IMPORTED_MODULE_0__["default"]
+  component: function component() {
+    return Promise.resolve(/*! import() */).then(__webpack_require__.bind(null, /*! ../components/fixtures/Fixtures */ "./resources/js/components/fixtures/Fixtures.vue"));
+  }
 });
 
 /***/ }),
@@ -39478,10 +39487,11 @@ __webpack_require__.r(__webpack_exports__);
 
 vue__WEBPACK_IMPORTED_MODULE_0___default.a.use(vue_router__WEBPACK_IMPORTED_MODULE_1__["default"]);
 /* harmony default export */ __webpack_exports__["default"] = (new vue_router__WEBPACK_IMPORTED_MODULE_1__["default"]({
-  mode: 'history',
   routes: [{
     path: '/',
-    component: _components_home_MainComponent__WEBPACK_IMPORTED_MODULE_2__["default"]
+    component: function component() {
+      return Promise.resolve(/*! import() */).then(__webpack_require__.bind(null, /*! ../components/home/MainComponent */ "./resources/js/components/home/MainComponent.vue"));
+    }
   }, _fixtures__WEBPACK_IMPORTED_MODULE_3__["default"]]
 }));
 
@@ -39494,7 +39504,7 @@ vue__WEBPACK_IMPORTED_MODULE_0___default.a.use(vue_router__WEBPACK_IMPORTED_MODU
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /home/blessedkono/michezoonline/resources/js/app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! /var/www/html/michezoonline/resources/js/app.js */"./resources/js/app.js");
 
 
 /***/ })
