@@ -29,47 +29,7 @@
 
 <body>
 <div id="app">
-
-<!--kode Wrapper Start-->
-<div class="kode_wrapper">
-    <!--Header 2 Wrap Start-->
-
-{{--    @include('includes.components.header')--}}
-
-    <!--Header 2 Wrap End-->
-    <home-component></home-component>
-
-{{--      @yield('content')--}}
-
-
-    <!--Footer Wrap Start-->
-{{--    @include('includes.components.footer')--}}
-    <!--Footer Wrap End-->
-    <!--Copy Right Wrap Start-->
-    <div class="copy_right3">
-        <div class="container">
-            <p>2016 @ Gameplay  Design with love <a href="#">KODEFOREST</a></p>
-            <ul class="kf_social3">
-                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                <li><a href="#"><i class="fa fa-rss"></i></a></li>
-            </ul>
-        </div>
-    </div>
-    <!--Copy Right Wrap End-->
-    <!--Register Pop Up Wrap Start-->
-    <div class="modal fade" id="search" tabindex="-1" role="dialog" aria-labelledby="search">
-        <div class="modal-dialog" role="document">
-            <div class="input_dec">
-                <input type="text" placeholder="search......">
-                <button class="btn_icon"><i class="fa fa-search"></i></button>
-            </div>
-        </div>
-    </div>
-    <!--Register Pop Up Wrap End-->
-</div>
-
-
+    <app></app>
 </div>
 
 <!--kode Wrapper End-->
@@ -98,4 +58,10 @@
 <script>
 
 
+</script>
+<script>
+    import App from "../../js/views/App";
+    export default {
+        components: {App}
+    }
 </script>
